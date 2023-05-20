@@ -1,0 +1,15 @@
+.header{
+    background-color: #F79327;
+    color: #fff;
+    margin-bottom: 0rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.common_text{
+    font-family:'Helvetica';
+    color: #353333;
+    text-align: center;
+}
