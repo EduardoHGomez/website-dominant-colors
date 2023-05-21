@@ -1,4 +1,6 @@
-.header{
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap');
+
+.header1{
     background-color: #F79327;
     color: #fff;
     margin-bottom: 0rem;
@@ -12,4 +14,63 @@
     font-family:'Helvetica';
     color: #353333;
     text-align: center;
+}
+
+h3{
+    font-family: 'Instrument sans';
+}
+
+
+.body2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #eaeef7;
+    background:-webkit-linear-gradient(to right, #cfdef3, #e0eafc);
+}
+
+.container{
+    max-width: 650px;
+    width: 80%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.drag-area{
+    height:400px;
+    border:3px dashed #d0d0d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'Instrument sans';
+}
+
+.drag-area .icon{
+    font-size: 30px;
+}
+
+.drag-area .header2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.drag-area .support{
+    font-size: 15px;
+    color: gray;
+    margin: 10px 0 15px 0;
+}
+
+.drag-area .button{
+    font-size: 18px;
+    color: rgb(0, 89, 255);
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+    cursor: pointer;
+    
 }
