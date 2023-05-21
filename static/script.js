@@ -54,8 +54,9 @@ function displayFile() {
         fileReader.onload = () =>{
             let fileURL = fileReader.result;
             //console.log(fileURL);
-            let imgTag = `<img src="${fileURL}" alt ="">`;
+            let imgTag = `<img src = ${fileURL}>`;
             dragArea.innerHTML = imgTag;
+            dragArea.classList.add('active2');
         };
         fileReader.readAsDataURL(file);
     }
