@@ -26,10 +26,17 @@ h3{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    flex-direction: column;
+    flex-direction: row;
     background: #f6f7f8;
     background:-webkit-linear-gradient(to right, #cfdef3, #e0eafc);
 }
+
+.form-container{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
 
 .container{
     max-width: 650px;
