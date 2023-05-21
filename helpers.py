@@ -1,11 +1,7 @@
 # import libraries: pandas, sckit
-from scipy.cluster.vq import kmeans
-import pandas as pd
-from scipy.cluster.vq import whiten
-from matplotlib import pyplot as plt
-from matplotlib import image as img
+from imports import  *
 
-def main():
+def get_dominant_colors():
     # Get image as array of size M * N (Size in pixels) and RGB
     image = img.imread('sample1.jpg')
 
@@ -34,5 +30,5 @@ def main():
     plt.show()
 
 if __name__ == "__main__":
-    main()
+    get_dominant_colors()
 
