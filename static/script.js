@@ -55,7 +55,7 @@ function displayFile() {
         fileReader.onload = () =>{
             let fileURL = fileReader.result;
             //console.log(fileURL);
-            let imgTag = `<img src = ${fileURL}>`;
+            let imgTag = `<img src = ${fileURL} name="image_uploaded">`;
             dragArea.innerHTML = imgTag;
             dragArea.classList.add('active2');
         };
