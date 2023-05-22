@@ -1,7 +1,7 @@
 # import libraries: pandas, sckit
 from imports import  *
 
-def get_dominant_colors():
+def get_dominant_colors(image_address):
     # Get image as array of size M * N (Size in pixels) and RGB
     image = img.imread('sample1.jpg')
 
@@ -26,8 +26,14 @@ def get_dominant_colors():
     for color in cluster_centers:
         sr, sg, sb = color
         colors.append((int(sr*r_std), int(sg*g_std), int(sb*b_std)))
-    plt.imshow([colors])
-    plt.show()
+    
+    print(colors)
+    
+    # Display colors:
+    #plt.imshow([colors])
+    #plt.show()
+
+    return colors
 
 if __name__ == "__main__":
     get_dominant_colors()

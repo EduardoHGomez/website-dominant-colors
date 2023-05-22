@@ -1,3 +1,4 @@
+// Space where image will be dropped
 const dragArea = document.querySelector('.drag-area');
 
 // Change the text of Drag and drop
@@ -13,7 +14,7 @@ button.onclick = () => {
     input.click();
 }
 
-// When browse
+// When browse is clicked
 input.addEventListener('change', function(){
     file = this.files[0];
     dragArea.classList.add('active');
@@ -36,13 +37,13 @@ dragArea.addEventListener('dragleave', () =>{
 
 // After file is dropped
 dragArea.addEventListener('drop', (event)=>{
-    event.preventDefault();
-    file = event.dataTransfer.files[0];
-
+    event.preventDefault(); // Prevent to load the page from the submit button
+    file = event.dataTransfer.files[0]; // Get the file uploaded
     displayFile();
-    console.log(file);
+    
 });
 
+// Savve and display image after it is dropped
 function displayFile() {
     let fileType = file.type;
 
