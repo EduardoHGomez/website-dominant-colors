@@ -1,8 +1,15 @@
 from flask import Flask, flash, jsonify, redirect, render_template, request, session
-import os
 from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
+
+app.config['UPLOAD_FOLDER'] = '/images'
+ALLOWED_EXTENSIONS = {'jpg', 'jpeg'}
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route('/', methods = ['POST', 'GET'])
 def index():
@@ -10,8 +17,10 @@ def index():
         return render_template('index.html')
 
     elif request.method == "POST":
-        testing = request.form.get('input-testing')
-        # Return a response or redirect to another page
+        
+
+
+        
         return render_template("layout.html", var=testing)
         
 

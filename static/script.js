@@ -21,28 +21,6 @@ input.addEventListener('change', function(){
     displayFile();
 });
 
-// When file is inside Drag Area
-dragArea.addEventListener('dragover', (event) =>{
-    event.preventDefault();
-    console.log('File is inside the drag Area');
-    dragText.textContent = 'Release to Upload';
-    dragArea.classList.add('active');    
-});
-
-dragArea.addEventListener('dragleave', () =>{
-    dragText.textContent = 'Drag and drop'; 
-    console.log('File left the drag area');
-    dragArea.classList.remove('active');   
-});
-
-// After file is dropped
-dragArea.addEventListener('drop', (event)=>{
-    event.preventDefault(); // Prevent to load the page from the submit button
-    file = event.dataTransfer.files[0]; // Get the file uploaded
-    displayFile();
-    
-});
-
 // Savve and display image after it is dropped
 function displayFile() {
     let fileType = file.type;

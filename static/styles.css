@@ -59,7 +59,7 @@ h3{
 
 input[type='number']{
     width: 130px;
-    height: 23px;
+    height: 26px;
 } 
 
 .input-form{
@@ -68,9 +68,9 @@ input[type='number']{
 
 .button-form{
     display:flex;
-    margin-top: 10px;
-    margin-left: 20%;
-    width:50%;
+    margin-top: -60px;
+    margin-left: -120px;
+    width: 100px;
     height:30px;
     align-items: center;
     justify-content: center;
