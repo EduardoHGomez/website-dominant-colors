@@ -17,7 +17,7 @@
             <h1>Dominant colors</h1>
         </div>
 
-        <form action="/" method=post enctype=multipart/form-data>
+        <form action="/" method="post" enctype="multipart/form-data">
             <div class="body2">
                 <div class="container">
                     <h3>Upload your file</h3>
@@ -27,17 +27,17 @@
                         </div>
                         <span class="header2"><span class="button">browse</span></span>
                         <span class="support">Supports: JPEG, JPG</span>
-                        <input type=file name=file>
                     </div>
+                    <input type="file" id ="opener" name=file/>
                 </div>
                 
                 <div class="form-container">
-                    <div class="input-form">
-                        <input autocomplete="off" min="1" max="10" name="amount-k" placeholder="Amount of colors" type="number">
-                    </div> 
-                    <div>
-                        <input type=submit class="button-form" value=Upload>
-                    </div>
+                        <div class="input-form">
+                            <input autocomplete="off" min="1" max="10" name="amount-k" placeholder="Amount of colors" type="number">
+                        </div> 
+                        <div>
+                            <button type="submit" class="button-form">Upload</button>
+                        </div>
                 </div>
             </div>
         </form>

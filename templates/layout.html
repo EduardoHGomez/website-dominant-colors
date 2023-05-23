@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Result</title>
-    </head>
-    <body>
-        Hola {{var}}
-    </body>
+<html>
+<head>
+	<title>success</title>
+</head>
+<body>
+    success here
+	<ul>
+        {% for color in colors: %}
+            <li>{{ color }}</li>
+        {% endfor %}
+    </ul>
+</body>
 </html>

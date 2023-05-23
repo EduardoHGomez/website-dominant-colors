@@ -24,7 +24,7 @@ h3{
     display:flex;
     min-height: 100vh;
     flex-direction: row;
-    background: #f5f6f7;
+    background: #d8dbdf;
     background:-webkit-linear-gradient(to right, #cfdef3, #e0eafc);
 }
 

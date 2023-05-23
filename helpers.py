@@ -3,7 +3,7 @@ from imports import  *
 
 def get_dominant_colors(image_address):
     # Get image as array of size M * N (Size in pixels) and RGB
-    image = img.imread('sample1.jpg')
+    image = img.imread(image_address)
 
     # Construct the dataframe
     df = pd.DataFrame()
