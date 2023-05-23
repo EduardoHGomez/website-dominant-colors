@@ -1,7 +1,7 @@
 # import libraries: pandas, sckit
 from imports import  *
 
-def get_dominant_colors(image_address):
+def get_dominant_colors(image_address, k):
     # Get image as array of size M * N (Size in pixels) and RGB
     image = img.imread(image_address)
 
@@ -17,7 +17,6 @@ def get_dominant_colors(image_address):
     df['b_whiten'] = whiten(df['b'])
 
     # Apply k means algorithm from sckit and standarized data
-    k = 4
     cluster_centers, distortion = kmeans(df[['r_whiten', 'g_whiten', 'b_whiten']], k)
 
     # Get colors backto RGB

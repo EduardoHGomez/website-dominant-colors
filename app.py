@@ -20,6 +20,7 @@ def upload_file():
 
     if request.method == 'POST':
         # check if the post request has the file part
+        k = int(request.form.get('amount_of_colors'))
         if 'file' not in request.files:
             flash('No file part')
             return redirect(request.url)
@@ -34,10 +35,16 @@ def upload_file():
             # Process the file contents as needed
             # Example: Print the file contents
 
-            colors = get_dominant_colors(file)
+            colors = get_dominant_colors(file, k)
             print(colors)
+
+            colors_code = list()
+            for color in colors:
+                hex_value = '#{:02x}{:02x}{:02x}'.format(*color)
+                colors_code.append(hex_value)
+            print(colors_code)
            
-            return render_template("layout.html", colors=colors)
+            return render_template("colors.html", colors=colors_code)
 
 
 if __name__ == '__main__':
