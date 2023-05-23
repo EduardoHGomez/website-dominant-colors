@@ -9,15 +9,41 @@
         <link rel="stylesheet" type="text/css" href="\static\styles.css"/>
 
         <title>Dominant colors</title>
+
+        <script>
+            function getTextColor(button) {
+                let text = button.innerText;
+                
+                // We will use a temporary input element and store data
+                let textToCopy = document.createElement("input");
+                textToCopy.type = "text";
+                textToCopy.value = text;
+                document.body.appendChild(textToCopy);
+                
+                // Here we select the text inside the input element and then copy to clipboard
+                textToCopy.select();
+                textToCopy.setSelectionRange(0, 99999); // For mobile devices
+                document.execCommand("copy");
+                
+                document.body.removeChild(textToCopy); // Must be deleted
+            }
+        </script>
+
     </head>
     <body>
         <div class="header1">
-            <h1>Dominant colors</h1>
+            <h1>
+                <a href="/" class="header1-link">
+                    Dominant color
+                </a>
+            </h1>
         </div>
 
         <div class="bar-container">
             {% for color in colors %}
-                <div class="bar-item" style="background-color: {{ color }};">{{color}}</div>
+                <div class="bar-item" style="background-color: {{ color }};">
+                    <button class="bar-button-item" onclick="getTextColor(this)">{{color}}</button>
+                </div>
             {% endfor %}
         </div>
 

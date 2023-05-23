@@ -32,8 +32,6 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             file.read()  # Read the file contents
-            # Process the file contents as needed
-            # Example: Print the file contents
 
             colors = get_dominant_colors(file, k)
             print(colors)
