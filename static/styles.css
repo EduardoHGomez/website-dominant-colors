@@ -63,6 +63,11 @@ h3{
     justify-content: center;
 }
 
+.form-amount{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
 input[type='number']{
     width: 130px;
     height: 26px;
@@ -70,14 +75,14 @@ input[type='number']{
 
 .input-form{
     margin-top: -200px;
-    margin-right: 29px;
+    margin-right: 0px;
 }
 
 .button-form{
     display:flex;
-    margin-top: -60px;
-    margin-left: -120px;
-    width: 100px;
+    margin-top: -40px;
+    margin-left: -140px;
+    width: 85px;
     height:30px;
     align-items: center;
     justify-content: center;
@@ -101,7 +106,7 @@ input[type='number']{
 
 .drag-area .button{
     font-size: 18px;
-    color: rgb(0, 89, 255);
+    color: rgb(255, 72, 0);
     margin: 10px 0 15px 0;
     font-weight: bold;
     cursor: pointer;
@@ -157,3 +162,4 @@ select{
     color:#fff;
     font-weight: 600;
 }
+

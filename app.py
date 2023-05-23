@@ -22,27 +22,17 @@ def upload_file():
         # check if the post request has the file part
         k = int(request.form.get('amount_of_colors'))
         if 'file' not in request.files:
-            flash('No file part')
-            return redirect(request.url)
+            return redirect("/")
         file = request.files['file']
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         if file.filename == '':
-            flash('No selected file')
-            return redirect(request.url)
+            return redirect("/")
         if file and allowed_file(file.filename):
             file.read()  # Read the file contents
 
             colors = get_dominant_colors(file, k)
-            print(colors)
-
-            colors_code = list()
-            for color in colors:
-                hex_value = '#{:02x}{:02x}{:02x}'.format(*color)
-                colors_code.append(hex_value)
-            print(colors_code)
-           
-            return render_template("colors.html", colors=colors_code)
+            return render_template("colors.html", colors=colors)
 
 
 if __name__ == '__main__':
