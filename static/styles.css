@@ -164,5 +164,8 @@ select{
 }
 
 .credits{
-    text-align: center"
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 30px;
 }
