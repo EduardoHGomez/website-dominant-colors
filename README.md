@@ -8,4 +8,4 @@ are returned
 ![alt text](images/Example_avatar_input.PNG "Image uploaded")
 
 ### Output
-![alt text](images/Example_avatar.PNG "Dominant colors of image")
+![alt text](images/Example_avatar.png "Dominant colors of image")
