@@ -5,7 +5,7 @@ are returned
 ## Example
 
 ### Load image
-![alt text](images/Example_avatar_input.PNG.png "Image uploaded")
+![alt text](images/Example_avatar_input.PNG "Image uploaded")
 
 ### Output
-![alt text](images/Example_avatar.PNG.png "Dominant colors of image")
+![alt text](images/Example_avatar.PNG "Dominant colors of image")
